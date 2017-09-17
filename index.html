@@ -6,11 +6,13 @@
     <title>Портфолио WEB-разработчика</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery.circliful.css">
+    <link rel="stylesheet" href="css/media.css">
     <!--chart-->
 
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -20,6 +22,7 @@
     <script src="js/common.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+
 </head>
 
 <body>
@@ -29,13 +32,13 @@
             <img src="img/bg.png" alt="Фон" class="bgcolor">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-2 logotype">
-                        <a href="http://localhost:3000/"><img src="img/logo.png" alt="Логотип"></a>
+                    <div class="col-md-2 col-sm-2 col-xs-4 logotype">
+                        <a href="https://readycodeee.github.io/"><img src="img/logo.png" alt="Логотип">&nbsp;</a>
                     </div>
-                    <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 caption text-center wow fadeInDown" data-wow-offset="150">
-                        <h4>САЙТ-ПОРТФОЛИО веб-разработчика</h4>
+                    <div class=" col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1 caption text-center wow fadeInDown" data-wow-offset="150">
+                        <h4 class="titl">САЙТ-ПОРТФОЛИО веб-разработчика</h4>
                     </div>
-                    <div class="btn col-md-offset-2 col-lg-offset-2 col-sm-offset-2" autofocus>
+                    <div class="btn col-md-offset-2 col-lg-offset-2 col-sm-offset-2 col-xs-offset-5" autofocus>
                         <div class="sandwich">
                             <div class="sw-top"></div>
                             <div class="sw-mid"></div>
@@ -105,19 +108,19 @@
                                 <h2>Профессиональный навыки</h2>
                                 <hr>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                 <h4>HTML5|CSS3</h4>
                                 <div id="test-circle1"></div>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                 <h4>jQuery|JavaScript</h4>
                                 <div id="test-circle2"></div>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                 <h4>PHP|MySQL</h4>
                                 <div id="test-circle3"></div>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                 <h4>Photoshop</h4>
                                 <div id="test-circle4"></div>
                             </div>
@@ -139,7 +142,7 @@
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="top-menu filter_div controls">
                                     <ul class="inline">
-                                        <li class="wow bounceInLeft filter active" type="button" data-filter="all">Все работы</li>
+                                        <li class="wow bounceInLeft filter active" type="button" data-filter=".all">Все работы</li>
                                         <li class="wow bounceInLeft filter" type="button" data-filter=".category-1">"под ключ"</li>
                                         <li class="wow bounceInRight filter" type="button" data-filter=".category-2">Верстка</li>
                                         <li class="wow bounceInRight filter" type="button" data-filter=".category-3">Прочее</li>
@@ -148,7 +151,7 @@
                             </div>
                         </div>
                         <div id="Container" class="content-potfol container">
-                            <div class="mix category-2  category-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 work-cont">
+                            <div class="mix all category-2  category-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 work-cont">
                                 <img src="img/work1.png" alt="Пример" class="work">
                                 <div class="port-item-cont">
                                     <h4>Птицефабрика Синявинская</h4>
@@ -156,7 +159,7 @@
                                     <button type="button" class="btn-more" data-toggle="modal" data-target="#modal-1">Подробнее</button>
                                 </div>
                             </div>
-                            <div class="mix category-2 col-lg-3 col-md-3 col-sm-3 col-xs-6 work-cont">
+                            <div class="mix all category-2 col-lg-3 col-md-3 col-sm-3 col-xs-6 work-cont">
                                 <img src="img/work2.png" alt="Пример" class="work">
                                 <div class="port-item-cont">
                                     <h4><br>Бетховен</h4>
@@ -164,7 +167,7 @@
                                     <button type="button" class="btn-more" data-toggle="modal" data-target="#modal-2">Подробнее</button>
                                 </div>
                             </div>
-                            <div class="mix category-1 category-3 category-2 col-lg-3 col-md-3 col-sm-3 col-xs-6 work-cont">
+                            <div class="mix all category-1 category-3 category-2 col-lg-3 col-md-3 col-sm-3 col-xs-6 work-cont">
                                 <img src="img/work3.png" alt="Пример" class="work">
                                 <div class="port-item-cont">
                                     <h4><br>ATSC</h4>
@@ -222,6 +225,7 @@
                                     <p>zollex69</p>
                                 </div>
                             </div>
+
                             <div class="col-md-6 col-sm-6 col-xs-12 wow bounceInRight" data-wow-offset="100">
                                 <div class="top-text-message">
                                     <h4>Так же Вы можете написать свое сообщения прямо здесь!<br>Вам необходио заполнить все поля!</h4>
@@ -230,15 +234,15 @@
                                     <form method="post" action="form_processing.php">
                                         <p>Ваше имя
                                             <br>
-                                            <input type="text" size="70" required name="your_name" placeholder="Ваше имя">
+                                            <input type="text" size="32" required name="your_name" placeholder="Ваше имя">
                                         </p>
                                         <p>Ваш E-mail
                                             <br>
-                                            <input type="email" size="70" required name="email" placeholder="example@mail.com">
+                                            <input type="email" size="32" required name="email" placeholder="example@mail.com">
                                         </p>
                                         <p>Ваше сообщение
                                             <br>
-                                            <textarea name="comment" cols="72" rows="5" name="messages" placeholder="Ваше сообщение"></textarea>
+                                            <textarea name="comment" cols="34" rows="5" name="messages" placeholder="Ваше сообщение"></textarea>
                                         </p>
                                         <p>
                                             <input type="submit" value="Отправить" class="btn-sub">
@@ -269,6 +273,8 @@
             </div>
         </footer>
     </div>
+
+
     <div class="modal" id="modal-1">
         <div class="modal-dialog">
             <div class="modal-content">
