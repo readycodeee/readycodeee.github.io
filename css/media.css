@@ -6,7 +6,7 @@
 
 	header .logotype img {
 		width: 100px;
-		height: 100px;
+		height: 70px;
 		margin-top: 0;
 	}
 
@@ -32,6 +32,11 @@
 	#about .knowledge p,
 	#about .self p {
 		font-size: 13px;
+	}
+
+	#about .skils h2 {
+		font-size: 27px;
+		font-weight: normal;
 	}
 
 	#portfolio .top-text-pt h2 {
