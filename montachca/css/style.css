@@ -1,29 +1,38 @@
 /*==================FONTS===================*/
 @font-face {
-  font-family: PFDinDisplayPro-Black;
-  src: url(../fonts/PFDinDisplayPro-Black.ttf);
+  font-family: 'PFDinDisplay';
+  src: url('../fonts/PFDinDisplayPro-Black.eot');
+  src: url('../fonts/PFDinDisplayPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFDinDisplayPro-Black.woff') format('woff'),
+    url('../fonts/PFDinDisplayPro-Black.ttf') format('truetype');
+  font-weight: Black;
+  font-style: normal;
 }
+
 @font-face {
-  font-family: PFDinDisplayPro-Bold;
-  src: url(../fonts/PFDinDisplayPro-Bold.ttf);
+  font-family: 'PFDinDisplay';
+  src: url('../fonts/PFDinDisplayPro-Bold.eot');
+  src: url('../fonts/PFDinDisplayPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFDinDisplayPro-Bold.woff') format('woff'),
+    url('../fonts/PFDinDisplayPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
+
 @font-face {
-  font-family: PFDinDisplayPro-Reg;
-  src: url(../fonts/PFDinDisplayPro-Reg.ttf);
+  font-family: 'PFDinDisplay';
+  src: url('../fonts/PFDinDisplayPro-Regular.eot');
+  src: url('../fonts/PFDinDisplayPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFDinDisplayPro-Regular.woff') format('woff'),
+    url('../fonts/PFDinDisplayPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-.black {
-  font-family: "PFDinDisplayPro-Black";
-}
-.bold {
-  font-family: "PFDinDisplayPro-Bold";
-}
-.reg {
-  font-family: "PFDinDisplayPro-Reg";
-}
-/*==================FONTS===================*/
+/*==================FONTS END===================*/
 body {
   padding: 0px;
-  font-family: "PFDinDisplayPro-Reg" !important;
+  font-family: "PFDinDisplay" !important;
+  font-weight: normal;
   overflow-x: hidden;
 }
 p {
@@ -36,7 +45,8 @@ header {
 }
 header .logotype img {
   margin-top: 10px;
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
 }
 header .header-post::before {
   content: url(../images/mail.png);
@@ -87,7 +97,8 @@ header .header-phone .phone {
 header .header-phone p {
   font-size: 26px;
   color: #ffab00;
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   float: right;
 }
 header .header-phone img {
@@ -149,7 +160,8 @@ header .header-phone a:hover {
 .menu a {
   left: 100px;
   font-size: 22px;
-  font-family: "PFDinDisplayPro-Black";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   color: #fff;
   padding-right: 5px;
   letter-spacing: 20;
@@ -183,7 +195,8 @@ header .header-phone a:hover {
   height: 640px;
 }
 #slider .top-txt h1 {
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   font-size: 80px;
   line-height: 80px;
   margin-bottom: 30px;
@@ -198,7 +211,8 @@ header .header-phone a:hover {
   margin-top: 42px;
   font-size: 20px;
   color: #232c2e;
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   padding: 15px 35px;
   background: #ffea00;
   letter-spacing: 0.4px;
@@ -217,13 +231,13 @@ header .header-phone a:hover {
   z-index: 100;
   position: absolute;
   display: block;
-  background: url(../images/1_normal.png) repeat-x;
+  background: url(../images/1_normal.jpg) repeat-x;
   height: 5px;
   width: 40px;
   cursor: pointer !important;
 }
 #slider .top-txt span:hover {
-  background: url(../images/2_hover.png) repeat-x;
+  background: url(../images/2_hover.jpg) repeat-x;
 }
 #slider .top-txt .btn-slider2 {
   margin-left: 50px;
@@ -251,7 +265,8 @@ header .header-phone a:hover {
   padding-top: 17px;
   padding-left: 32px;
   height: 60px;
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   font-size: 23px;
   color: #fff;
   line-height: 25px;
@@ -262,7 +277,8 @@ header .header-phone a:hover {
   color: #fec606;
 }
 #about-us .about-company p {
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   font-size: 16px;
   color: #a8acaf;
   line-height: 30px;
@@ -283,7 +299,8 @@ header .header-phone a:hover {
   top: -150px;
   display: block;
   position: relative;
-  font-family: "PFDinDisplayPro-Black";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   font-size: 22px;
   line-height: 25px;
   text-transform: uppercase;
@@ -296,7 +313,8 @@ header .header-phone a:hover {
   border-bottom: 1px solid #a8acaf;
   margin-top: 25px;
   font-size: 16px;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   line-height: 25px;
   outline: none;
 }
@@ -319,7 +337,8 @@ header .header-phone a:hover {
   margin-bottom: 62px;
   padding: 14px 40px;
   background: #ffea00;
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   font-size: 20px;
   line-height: 30px;
   border: none;
@@ -331,7 +350,8 @@ header .header-phone a:hover {
   top: 30px !important;
 }
 #about-us .ab-tit {
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   font-size: 20px;
   color: #232c2e;
   line-height: 30px;
@@ -347,21 +367,24 @@ header .header-phone a:hover {
 }
 #about-us .advatantages .advant-item img {
   float: left;
-  padding-top: 16px;
+  padding-top: 25px;
+  padding-right: 15px;
 }
 #about-us .advatantages .advant-item h4 {
   float: left;
   color: #232c2e;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   font-size: 20px;
   line-height: 23px;
-  padding-top: 40px;
+  padding-top: 32px;
   text-transform: uppercase;
 }
 #about-us .advatantages .advant-item p {
   float: left;
   color: #a8acaf;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
 }
@@ -385,7 +408,8 @@ header .header-phone a:hover {
   padding-left: 30px;
   padding-top: 16px;
   color: #fff;
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   font-size: 23px;
   line-height: 25px;
   letter-spacing: 0.46px;
@@ -426,14 +450,16 @@ header .header-phone a:hover {
   padding-top: 20px;
   font-size: 24px;
   color: #232c2e;
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   line-height: 30px;
   letter-spacing: 0.72px;
 }
 #service .item-serv .outline p {
   font-size: 16px;
   color: #424d53;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   line-height: 30px;
   letter-spacing: 0.32px;
 }
@@ -460,7 +486,8 @@ header .header-phone a:hover {
   padding-left: 30px;
   padding-top: 16px;
   color: #fff;
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   font-size: 23px;
   line-height: 25px;
   letter-spacing: 0.46px;
@@ -503,11 +530,13 @@ header .header-phone a:hover {
   padding-top: 100px;
   font-size: 20px;
   color: #ffab00;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
 }
 #autopark .items-park h3 {
   color: #232c2e;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.6px;
@@ -527,7 +556,8 @@ header .header-phone a:hover {
 }
 #news .news-title h2 {
   color: #fff;
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   font-size: 23px;
   line-height: 25px;
   letter-spacing: 0.46px;
@@ -553,13 +583,15 @@ header .header-phone a:hover {
 }
 #news .item .txt-news time {
   color: #c8c8c8;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   font-size: 16px;
   line-height: 23px;
 }
 #news .item .txt-news h3 {
   color: #232c2e;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   font-size: 20px;
   line-height: 23px;
   text-transform: uppercase;
@@ -569,7 +601,8 @@ header .header-phone a:hover {
 }
 #news .item .txt-news p {
   color: #232c2e;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
 }
@@ -597,7 +630,8 @@ header .header-phone a:hover {
 }
 #reviews .review-title h2 {
   color: #fff;
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   font-size: 23px;
   line-height: 25px;
   letter-spacing: 0.46px;
@@ -625,7 +659,8 @@ header .header-phone a:hover {
   top: -40px;
   font-size: 14px;
   color: #232c2e;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   line-height: 20px;
 }
 #reviews .review p {
@@ -633,7 +668,8 @@ header .header-phone a:hover {
   top: -30px;
   font-size: 16px;
   color: #c8c8c8;
-  font-family: "PFDinDisplayPro-Reg";
+  font-family: "PFDinDisplay";
+  font-weight: normal;
   line-height: 30px;
 }
 /*==================MAP===================*/
@@ -697,7 +733,8 @@ footer .header-phone .phone {
 footer .header-phone p {
   font-size: 26px;
   color: #ffab00;
-  font-family: "PFDinDisplayPro-Bold";
+  font-family: "PFDinDisplay";
+  font-weight: bold;
   float: right;
 }
 footer .header-phone img {
